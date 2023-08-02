@@ -1,4 +1,3 @@
-# Manish6934jsassessment
 /*
 Assessment Requirements
 1. Create a variable that can hold a number of NFT's. What type of variable might this be?
@@ -15,15 +14,15 @@ const NFTs = []
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT (_name,_eyecolor,_shirttype,_bling) {
+function mintNFT (_nickname,_haircolor,_dress,_jewellery) {
   const NFT = {
-    "name":_name,
-    "eyecolor":_eyecolor,
-    "shirttype":_shirttype,
-    "bling":_bling,
+    "nickname":_nickname,
+    "haircolor":_haircolor,
+    "dress":_dress,
+    "jewellery":_jewellery,
   }
   NFTs.push(NFT);
-  console.log("Minted :"+ _name);
+  console.log("Minted :"+ _nickname);
 }
 
 // create a "loop" that will go through an "array" of NFT's
@@ -32,10 +31,10 @@ function listNFTs () {
    for(let i=0;i<NFTs.length;i++)
    {
     console.log("\nID :\t\t"+(i+1));
-    console.log("Name :\t\t" +NFTs[i].name);
-    console.log("Eyecolor :\t"+NFTs[i].eyecolor);
-    console.log("Shirttype :\t"+NFTs[i].shirttype);
-    console.log("Bling:\t\t " +NFTs[i].bling);
+    console.log("nickname :\t\t" +NFTs[i].nickname);
+    console.log("haircolor :\t"+NFTs[i].haircolor);
+    console.log("dress :\t"+NFTs[i].dress);
+    console.log("jewellery:\t\t " +NFTs[i].jewellery);
    }
 }
 
@@ -45,9 +44,9 @@ function getTotalSupply() {
 }
 
 // call your functions below this line
-mintNFT("Saurav","black","hoodie","Gold chain");
-mintNFT("Suman","black","hoodie","Gold chain");
-mintNFT("Sumit","black","hoodie","Gold chain");
-mintNFT("Aryan","black","hoodie","Gold chain");
+mintNFT("Anshu","green","hoodie","Gold chain");
+mintNFT("Raj","white","jacket","Gold chain");
+mintNFT("Manish","Black","sweter","Gold chain");
+mintNFT("Raunak","Blue","shirt","Gold chain");
 listNFTs();
 getTotalSupply();
